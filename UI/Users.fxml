@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="954.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="26.0" layoutY="14.0" prefHeight="53.0" prefWidth="522.0" text="Personnel" textFill="#000000a6">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Label>
+      <Accordion layoutX="567.0" layoutY="149.0" prefHeight="711.0" prefWidth="596.0">
+        <panes>
+          <TitledPane animated="false" text="Synchronization">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="557.0" prefWidth="594.0">
+                     <children>
+                        <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <columns>
+                              <TableColumn maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="116.00000303983688" text="Resource" />
+                              <TableColumn maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="192.99998474121094" text="Delay" />
+                              <TableColumn maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="132.0" text="Action" />
+                           </columns>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+          </TitledPane>
+            <TitledPane animated="false" layoutX="10.0" layoutY="61.0" text="Groups" visible="false">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="129.0" layoutY="493.0" mnemonicParsing="false" text="Notify">
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="Access" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Button>
+                        <Button layoutX="80.0" layoutY="518.0" mnemonicParsing="false" text="+" />
+                        <Button layoutX="28.0" layoutY="518.0" mnemonicParsing="false" text="--" />
+                        <Button layoutX="144.0" layoutY="366.0" mnemonicParsing="false" text="Update" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+          <TitledPane animated="false" text="Locations" visible="false">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="129.0" layoutY="493.0" mnemonicParsing="false" text="Notify">
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="Access" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </Button>
+                        <CheckBox allowIndeterminate="true" indeterminate="true" layoutX="25.0" layoutY="87.0" mnemonicParsing="false" selected="true" text=" Location 1" />
+                        <CheckBox layoutX="54.0" layoutY="171.0" mnemonicParsing="false" selected="true" text="Resource 1  (...101)" />
+                        <CheckBox layoutX="54.0" layoutY="265.0" mnemonicParsing="false" text="Resource 2  (...102)" />
+                        <Button layoutX="80.0" layoutY="518.0" mnemonicParsing="false" text="+" />
+                        <Button layoutX="28.0" layoutY="518.0" mnemonicParsing="false" text="--" />
+                        <Label layoutX="99.0" layoutY="359.0" text="..." underline="true" />
+                        <Label layoutX="91.0" layoutY="128.0" text="Schedule 3" underline="true" />
+                        <Label layoutX="107.0" layoutY="218.0" text="Schedule 4" underline="true" />
+                        <ComboBox layoutX="86.0" layoutY="310.0" prefHeight="51.0" prefWidth="230.0" />
+                        <Label layoutX="110.0" layoutY="420.0" text="Add Schedule..." />
+                        <Label layoutX="103.0" layoutY="455.0" text="Create Schedule..." />
+                        <Label layoutX="113.0" layoutY="385.0" text="(None)" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="Activities" visible="false">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="20.0" layoutY="30.0" text="Schedules" />
+                        <Label layoutX="34.0" layoutY="65.0" text="Locations" />
+                        <Label layoutX="52.0" layoutY="108.0" text="Resources" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+            <TitledPane animated="false">
+              <content>
+                <AnchorPane>
+                     <children>
+                        <TableView AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" text="Resource" />
+                            <TableColumn maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" text="Schedule" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+               <graphic>
+                  <GridPane maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="490.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Resources" />
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="##" GridPane.columnIndex="1" GridPane.halignment="RIGHT" />
+                     </children>
+                  </GridPane>
+               </graphic>
+            </TitledPane>
+            <TitledPane animated="false" layoutX="10.0" layoutY="265.0" text="Schedules">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" text="Administration">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+      <TableView layoutX="26.0" layoutY="145.0" prefHeight="711.0" prefWidth="522.0">
+         <columns>
+            <TableColumn prefWidth="236.0" text="Name" />
+            <TableColumn minWidth="214.0" prefWidth="214.0" text="Code" />
+         </columns>
+      </TableView>
+      <Button layoutX="26.0" layoutY="875.0" mnemonicParsing="false" text="+" />
+      <Button layoutX="505.0" layoutY="889.0" mnemonicParsing="false" text="Clone" visible="false" />
+      <Button layoutX="499.0" layoutY="875.0" mnemonicParsing="false" text="--" />
+      <ComboBox layoutX="26.0" layoutY="73.0" prefHeight="51.0" prefWidth="522.0" />
+      <Button layoutX="623.0" layoutY="889.0" mnemonicParsing="false" text="Disable" visible="false" />
+      <GridPane layoutX="567.0" layoutY="73.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" prefWidth="596.0">
+         <children>
+            <FlowPane alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4">
+               <children>
+                  <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="50.0" text="&gt;" textAlignment="CENTER" />
+               </children>
+            </FlowPane>
+            <FlowPane alignment="CENTER" layoutX="450.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="3">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" text="Personnel 1" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </FlowPane>
+            <FlowPane alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button alignment="CENTER_RIGHT" contentDisplay="CENTER" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="50.0" text="&lt;" textAlignment="CENTER" />
+               </children>
+            </FlowPane>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label alignment="CENTER" layoutX="568.0" layoutY="23.0" prefHeight="50.0" prefWidth="596.0" text="1 of 5">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Button layoutX="567.0" layoutY="875.0" mnemonicParsing="false" text="+" />
+      <Button layoutX="1111.0" layoutY="875.0" mnemonicParsing="false" text="--" />
+      <ComboBox layoutX="643.0" layoutY="875.0" prefHeight="51.0" prefWidth="445.0" />
+   </children>
+</Pane>
